@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Lumen Tech Solutions</title>
+  <meta name="description" content="Get in touch with Lumen Tech Solutions. Call, email or send us a message and we will reply within one business day.">
+  <meta name="theme-color" content="#0c1a3d">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <!-- Fonts: Plus Jakarta Sans (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <!-- Icons: Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header & navigation (shared on every page) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Lumen Tech Solutions, home">
+        <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+        <span class="brand__name">Lumen<span class="brand__accent">Tech</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a class="main-nav__link" href="index.html">Home</a>
+        <a class="main-nav__link" href="about.html">About</a>
+        <a class="main-nav__link" href="services.html">Services</a>
+        <a class="main-nav__link" href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html" class="btn btn--primary">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page banner -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+        <h1 id="page-title">Contact us</h1>
+        <p>Have a question or a project in mind? Send us a message and a member of our team will reply within one business day.</p>
+      </div>
+    </section>
+
+    <!-- Contact options -->
+    <section class="section" style="padding-bottom: 0" aria-label="Ways to contact us">
+      <div class="container grid grid--3 contact-cards">
+        <article class="card">
+          <div class="icon-box"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+          <h2 class="h3" style="font-size: var(--text-xl)">Call us</h2>
+          <p>Sun – Thu, 9:00 – 18:00<br><a href="tel:+20225550147">+20 2 2555 0147</a></p>
+        </article>
+        <article class="card">
+          <div class="icon-box icon-box--amber"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+          <h2 style="font-size: var(--text-xl)">Email us</h2>
+          <p>We reply within 24 hours<br><a href="mailto:hello@lumentech.example">hello@lumentech.example</a></p>
+        </article>
+        <article class="card">
+          <div class="icon-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+          <h2 style="font-size: var(--text-xl)">Visit us</h2>
+          <p>24 Nile Corniche, Garden City<br>Cairo, Egypt</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Form + map -->
+    <section class="section" aria-labelledby="form-title">
+      <div class="container grid contact-layout">
+        <div class="form-card">
+          <h2 id="form-title">Send us a message</h2>
+          <p>Fields marked <span class="req" style="color: var(--error)">*</span> are required.</p>
+
+          <!-- novalidate: JavaScript shows friendly inline errors instead of browser pop-ups.
+               The HTML attributes (required, type, minlength, maxlength) still document the rules
+               and act as a fallback if JavaScript is disabled. -->
+          <form id="contact-form" class="form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full name <span class="req">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="3" maxlength="80" aria-describedby="name-error">
+                <p class="field__error" id="name-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="email">Email address <span class="req">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="email-error">
+                <p class="field__error" id="email-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="20" placeholder="+20 100 000 0000" aria-describedby="phone-error">
+                <p class="field__error" id="phone-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="service">Service <span class="req">*</span></label>
+                <select id="service" name="service" required aria-describedby="service-error">
+                  <option value="">Select a service</option>
+                  <option value="cloud">Cloud Solutions</option>
+                  <option value="software">Custom Software</option>
+                  <option value="security">Cybersecurity</option>
+                  <option value="support">Managed IT Support</option>
+                  <option value="data">Data &amp; Analytics</option>
+                  <option value="consulting">IT Consulting</option>
+                </select>
+                <p class="field__error" id="service-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea id="message" name="message" required minlength="20" maxlength="500" placeholder="Tell us a little about your business and what you need…" aria-describedby="message-error message-count"></textarea>
+              <span class="field__hint" id="message-count">0 / 500</span>
+              <p class="field__error" id="message-error" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label class="checkbox">
+                <input type="checkbox" name="consent" required aria-describedby="consent-error">
+                <span>I agree to Lumen Tech Solutions contacting me about this enquiry.</span>
+              </label>
+              <p class="field__error" id="consent-error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+            <p class="alert alert--success" id="form-success" role="status" tabindex="-1" hidden>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i><span></span>
+            </p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="map">
+            <img src="assets/images/office-map.svg" alt="Map showing our office on Nile Corniche, Garden City, Cairo" width="600" height="340" loading="lazy">
+          </div>
+          <div class="faq" style="margin-top: 2rem">
+            <h2 style="font-size: var(--text-xl)">Frequently asked questions</h2>
+            <details>
+              <summary>How quickly will you reply?</summary>
+              <p>We answer every message within one business day, and usually much sooner.</p>
+            </details>
+            <details>
+              <summary>Is the first consultation free?</summary>
+              <p>Yes. The first 30-minute consultation and IT assessment are always free.</p>
+            </details>
+            <details>
+              <summary>Do you work with small businesses?</summary>
+              <p>Absolutely. Most of our clients have between 5 and 200 employees.</p>
+            </details>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (shared on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+            <span class="brand__name">Lumen<span class="brand__accent">Tech</span></span>
+          </a>
+          <p>Reliable cloud, software and security services that help growing businesses work smarter since 2014.</p>
+          <div class="socials" aria-label="Social media">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Lumen on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Lumen on X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Lumen on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/guirguisnashat" target="_blank" rel="noopener" aria-label="Lumen on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#team">Our team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#cloud">Cloud solutions</a></li>
+            <li><a href="services.html#software">Custom software</a></li>
+            <li><a href="services.html#security">Cybersecurity</a></li>
+            <li><a href="services.html#support">Managed IT support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>24 Nile Corniche, Garden City, Cairo, Egypt</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+20225550147">+20 2 2555 0147</a></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:hello@lumentech.example">hello@lumentech.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Lumen Tech Solutions. All rights reserved.</p>
+        <p><a href="#main">Privacy policy</a> &middot; <a href="#main">Terms of service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Lumen Tech Solutions</title>
+  <meta name="description" content="Learn about Lumen Tech Solutions: our story, mission, values and the team behind our work.">
+  <meta name="theme-color" content="#0c1a3d">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <!-- Fonts: Plus Jakarta Sans (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <!-- Icons: Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header & navigation (shared on every page) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Lumen Tech Solutions, home">
+        <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+        <span class="brand__name">Lumen<span class="brand__accent">Tech</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a class="main-nav__link" href="index.html">Home</a>
+        <a class="main-nav__link" href="about.html" aria-current="page">About</a>
+        <a class="main-nav__link" href="services.html">Services</a>
+        <a class="main-nav__link" href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn--primary">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page banner -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+        <h1 id="page-title">About Lumen Tech Solutions</h1>
+        <p>We are a team of engineers, designers and problem-solvers who believe technology should make work simpler, not harder.</p>
+      </div>
+    </section>
+
+    <!-- Company story -->
+    <section class="section" aria-labelledby="story-title">
+      <div class="container split">
+        <div class="story-visual">
+          <img src="assets/images/team-collaboration.svg" alt="Illustration of three Lumen team members collaborating at a table" width="600" height="440" loading="lazy">
+        </div>
+        <div>
+          <span class="eyebrow">Our story</span>
+          <h2 id="story-title">From a two-person help desk to a trusted IT partner</h2>
+          <p>Lumen started in 2014 when two engineers in Cairo noticed that small businesses were paying enterprise prices for slow, confusing IT support. They set out to offer something different: fast answers, plain language and honest pricing.</p>
+          <p>Today we are a team of 45 certified engineers, supporting more than 120 companies across healthcare, retail, logistics and finance in Egypt and the wider Middle East.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Microsoft, AWS and Cisco certified partners</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>ISO 27001 certified security practices</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Offices in Cairo and Alexandria</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & values -->
+    <section class="section section--alt" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">What drives us</span>
+          <h2 id="values-title">Our mission and values</h2>
+          <p>Our mission is to give every growing business access to world-class technology and the people who understand it.</p>
+        </header>
+        <div class="grid grid--4">
+          <article class="card">
+            <div class="icon-box"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+            <h3>Clarity</h3>
+            <p>No jargon. We explain every recommendation in plain language.</p>
+          </article>
+          <article class="card">
+            <div class="icon-box icon-box--amber"><i class="fa-solid fa-user-shield" aria-hidden="true"></i></div>
+            <h3>Integrity</h3>
+            <p>We recommend only what you need, even when it means a smaller invoice.</p>
+          </article>
+          <article class="card">
+            <div class="icon-box"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+            <h3>Ownership</h3>
+            <p>Every client has a named engineer who owns their success.</p>
+          </article>
+          <article class="card">
+            <div class="icon-box icon-box--amber"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+            <h3>Growth</h3>
+            <p>We invest 10% of our time in training, so our skills keep up with technology.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Milestones</span>
+          <h2 id="journey-title">Our journey so far</h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__year">2014</span>
+            <h3>Founded in Cairo</h3>
+            <p>Two engineers launch Lumen as an IT help desk for local businesses.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">2017</span>
+            <h3>Cloud practice launched</h3>
+            <p>Became an AWS partner and completed our first 50 cloud migrations.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">2020</span>
+            <h3>Software studio opened</h3>
+            <p>Started building custom web and mobile applications for clients.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">2024</span>
+            <h3>ISO 27001 certification</h3>
+            <p>Opened our Alexandria office and achieved international security certification.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section--alt" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Our team</span>
+          <h2 id="team-title">Meet the leadership team</h2>
+          <p>The people who make sure every project is delivered on time, on budget and to a high standard.</p>
+        </header>
+        <div class="grid grid--4">
+          <article class="card team-card">
+            <div class="avatar" aria-hidden="true">KA</div>
+            <h3>Karim Adel</h3>
+            <span class="team-card__role">Founder &amp; CEO</span>
+            <p>Leads company strategy and has 15 years of experience in enterprise IT.</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Karim Adel on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:karim@lumentech.example" aria-label="Email Karim Adel"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </article>
+          <article class="card team-card">
+            <div class="avatar" style="--c1: #f59e0b; --c2: #b45309" aria-hidden="true">SH</div>
+            <h3>Salma Hassan</h3>
+            <span class="team-card__role">Chief Technology Officer</span>
+            <p>Architect of our cloud platform, with AWS and Azure certifications.</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Salma Hassan on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:salma@lumentech.example" aria-label="Email Salma Hassan"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </article>
+          <article class="card team-card">
+            <div class="avatar" style="--c1: #10b981; --c2: #047857" aria-hidden="true">YM</div>
+            <h3>Youssef Mansour</h3>
+            <span class="team-card__role">Head of Security</span>
+            <p>Leads our security operations centre and incident response team.</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Youssef Mansour on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:youssef@lumentech.example" aria-label="Email Youssef Mansour"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </article>
+          <article class="card team-card">
+            <div class="avatar" style="--c1: #8b5cf6; --c2: #5b21b6" aria-hidden="true">NT</div>
+            <h3>Nadia Tawfik</h3>
+            <span class="team-card__role">Head of Client Success</span>
+            <p>Makes sure every client gets fast, friendly and effective support.</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Nadia Tawfik on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:nadia@lumentech.example" aria-label="Email Nadia Tawfik"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 id="cta-title">Want to work with us?</h2>
+            <p>Tell us about your business and we will put together a plan that fits.</p>
+          </div>
+          <a href="contact.html" class="btn btn--accent">Contact our team <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (shared on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+            <span class="brand__name">Lumen<span class="brand__accent">Tech</span></span>
+          </a>
+          <p>Reliable cloud, software and security services that help growing businesses work smarter since 2014.</p>
+          <div class="socials" aria-label="Social media">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Lumen on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Lumen on X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Lumen on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/guirguisnashat" target="_blank" rel="noopener" aria-label="Lumen on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#team">Our team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#cloud">Cloud solutions</a></li>
+            <li><a href="services.html#software">Custom software</a></li>
+            <li><a href="services.html#security">Cybersecurity</a></li>
+            <li><a href="services.html#support">Managed IT support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>24 Nile Corniche, Garden City, Cairo, Egypt</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+20225550147">+20 2 2555 0147</a></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:hello@lumentech.example">hello@lumentech.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Lumen Tech Solutions. All rights reserved.</p>
+        <p><a href="#main">Privacy policy</a> &middot; <a href="#main">Terms of service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
